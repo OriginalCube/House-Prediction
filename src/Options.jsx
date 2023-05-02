@@ -1,5 +1,6 @@
 import React from "react";
 import Requirement from "./Requirement.json";
+import Typewriter from "typewriter-effect";
 
 const Options = () => {
   const [id, setId] = React.useState(1);
@@ -11,11 +12,8 @@ const Options = () => {
     history.push(textData);
     setId(id + 1);
     setHistory([...history]);
+    setTextData("");
   };
-
-  React.useEffect(() => {
-    console.log(history);
-  }, [history]);
 
   const AnyaInput = (ev) => (
     <div className="h-auto w-full">
@@ -24,12 +22,23 @@ const Options = () => {
           <div style={{ width: "7%" }} className="h-2/3 mr-5 border-red-500">
             <img
               className="h-full w-full"
-              src="./assets/images/mainThumbnail.gif"
+              src="./assets/images/anya-forger.gif"
               alt=""
             />
           </div>
-          <div style={{ width: "93%" }} className="h-full">
-            <p className="font-medium">{ev.question}</p>
+          <div style={{ width: "93%" }} className="h-full font-medium">
+            {id - 1 === ev.index && textData.length === 0 ? (
+              <Typewriter
+                options={{
+                  strings: `${ev.question}`,
+                  autoStart: true,
+                  delay: 0.001,
+                  loop: false,
+                }}
+              />
+            ) : (
+              <p>{ev.question}</p>
+            )}
             <p className="text-sm opacity-80">{ev.label}</p>
           </div>
         </div>
@@ -40,16 +49,12 @@ const Options = () => {
             <div style={{ width: "7%" }} className="h-2/3 mr-5 border-red-500">
               <img
                 className="h-full w-full"
-                src="./assets/images/mainThumbnail.gif"
+                src="./assets/images/bocchi-the-rock-bocchi.gif"
                 alt=""
               />
             </div>
             <div style={{ width: "93%" }} className="h-full">
-              <p className="font-medium">
-                {history[ev.index] === ""
-                  ? "Waiting for reply..."
-                  : history[ev.index]}
-              </p>
+              <p className="mt-5 font-lightbold">{history[ev.index]}</p>
             </div>
           </div>
         </div>
@@ -77,6 +82,7 @@ const Options = () => {
           style={{ width: "50%", left: "33%", bottom: "5%" }}
           value={textData}
           pattern="[0-9]+"
+          placeholder="Input..."
           onChange={(e) => setTextData(e.target.value)}
         />{" "}
       </form>
