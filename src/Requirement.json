@@ -1,0 +1,12 @@
+{
+  "Block": [
+    {
+      "question": "Hey there, how big is the yard in this house? Is it big enough for playing tag or flying kites? I hope there's plenty of space for me and my friends to run around and have fun!",
+      "label": "Input lot size (meters)..."
+    },
+    {
+      "question": "Hey there, how big is the actual size of the home? Is it possible to play hide in seek in it?",
+      "label": "Input house lot size (meters)..."
+    }
+  ]
+}
