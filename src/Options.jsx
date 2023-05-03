@@ -43,7 +43,7 @@ const Options = () => {
           </div>
         </div>
       </div>
-      {history[ev.index] !== "" ? (
+      {id - 1 !== ev.index ? (
         <div className="mt-2 p-5">
           <div className="w-2/3 m-auto flex item-baseline">
             <div style={{ width: "7%" }} className="h-2/3 mr-5 border-red-500">
