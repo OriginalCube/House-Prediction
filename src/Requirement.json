@@ -1,12 +1,59 @@
 {
-  "Block": [
+  "Price": [
     {
-      "question": "Hey there, how big is the yard in this house? Is it big enough for playing tag or flying kites? I hope there's plenty of space for me and my friends to run around and have fun!",
-      "label": "Input lot size (meters)..."
+      "question": "Uumm... How would you like your house to look like?",
+      "img": "./assets/reference/subclass.jpg",
+      "label": "Input dedicated value from the given options."
     },
     {
-      "question": "Hey there, how big is the actual size of the home? Is it possible to play hide in seek in it?",
+      "question": "What would be the size of your lot size then?",
+      "img": "",
       "label": "Input house lot size (meters)..."
+    },
+    {
+      "question": "What would be the overall quality you'll want your house in?",
+      "img": "./assets/reference/overqual.jpg",
+      "label": "Input dedicated value from the given options..."
+    },
+    {
+      "question": "What would be the overall condition you'll want your house in?",
+      "img": "./assets/reference/overqual.jpg",
+      "label": "Input dedicated value from the given options."
+    },
+    {
+      "question": "What year do you consider a house to be in your preference?",
+      "img": "",
+      "label": "Input the year that you expect the house to be created. (1872 - 2010)"
+    },
+    {
+      "question": "Based from the previous question how recent do you expect the house to be renovated?",
+      "img": "",
+      "label": "Input the year that you expect the house to be renovated in. (1950 - 2010)"
+    },
+    {
+      "question": "Do you want central air in your house?",
+      "img": "",
+      "label": "Input 1 if yes and 0 if no"
+    },
+    {
+      "question": "Input number of bathrooms located on top of the basement or ground floor.",
+      "img": "",
+      "label": "Input only 0 - 3."
+    },
+    {
+      "question": "Input number of total of rooms that you want located on top of the basement or ground floor.",
+      "img": "",
+      "label": "Input only 2 - 14."
+    },
+    {
+      "question": "Input garage car capacity",
+      "img": "",
+      "label": "Input only 0 - 4."
+    },
+    {
+      "question": "Size of garage in square feet",
+      "img": "",
+      "label": "Input expected square feet size."
     }
   ]
 }
