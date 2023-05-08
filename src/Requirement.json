@@ -8,7 +8,7 @@
     {
       "question": "What would be the size of your lot size then?",
       "img": "",
-      "label": "Input house lot size (meters)..."
+      "label": "Input house lot size (square feet)..."
     },
     {
       "question": "What would be the overall quality you'll want your house in?",

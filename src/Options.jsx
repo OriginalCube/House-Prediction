@@ -37,6 +37,7 @@ const Options = (props) => {
     if (history.length === 11) {
       props.setPrice(PricePrediction(history));
     }
+    props.setHistory(history);
   }, [history]);
 
   React.useEffect(() => {
