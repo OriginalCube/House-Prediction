@@ -72,7 +72,7 @@ const Options = (props) => {
             )}
             {ev.image ? (
               <div className="h-auto w-full">
-                <img className="h-auto w-full" src={ev.image} alt="" />
+                <img className="h-auto w-full" src={`${ev.image}`} alt="" />
               </div>
             ) : null}
             <p className="text-sm opacity-80 font-normal">{ev.label}</p>
